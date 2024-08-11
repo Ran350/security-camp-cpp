@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4F2A0842C5CD68F0029787B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F2A0832C5CD68F0029787B /* main.cpp */; };
+		C4611A4F2C6876B1008106C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4611A4D2C6876B1008106C4 /* main.cpp */; };
+		C4611A5C2C687775008106C4 /* TextFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4611A5A2C687775008106C4 /* TextFile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C4611A4D2C6876B1008106C4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C4611A5A2C687775008106C4 /* TextFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextFile.cpp; sourceTree = "<group>"; };
+		C4611A5B2C687775008106C4 /* TextFile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextFile.hpp; sourceTree = "<group>"; };
 		C4F2A0802C5CD68F0029787B /* security-camp-cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "security-camp-cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4F2A0832C5CD68F0029787B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		C4F2A0822C5CD68F0029787B /* security-camp-cpp */ = {
 			isa = PBXGroup;
 			children = (
-				C4F2A0832C5CD68F0029787B /* main.cpp */,
+				C4611A4D2C6876B1008106C4 /* main.cpp */,
+				C4611A5A2C687775008106C4 /* TextFile.cpp */,
+				C4611A5B2C687775008106C4 /* TextFile.hpp */,
 			);
 			path = "security-camp-cpp";
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F2A0842C5CD68F0029787B /* main.cpp in Sources */,
+				C4611A5C2C687775008106C4 /* TextFile.cpp in Sources */,
+				C4611A4F2C6876B1008106C4 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +139,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -194,7 +200,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
