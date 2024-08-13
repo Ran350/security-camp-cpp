@@ -1,6 +1,6 @@
-﻿#include "MyLib/Common.hpp" // - 13:50
+﻿#include "MyLib/Common.hpp"  // - 13:50
+#include "MyLib/Utility.hpp" // - 14:00
 #include <print>
-// #include "MyLib/Utility.hpp" // - 14:00
 // #include "MyLib/Point.hpp" // - 14:20
 // #include "MyLib/FileSystem.hpp" // - 14:30
 // #include "MyLib/Timer.hpp"// - 14:40
@@ -14,20 +14,24 @@
 // #include "MyLib/Image.hpp" // - 16:50
 // #include "MyLib/BMP.hpp" // - 17:10
 
+using namespace seccamp;
+
 int main()
 {
     std::println("Hello, SecCamp!");
 
-#if SECCAMP_PLATFORM(MACOS)
-	std::println("macOS");
-#endif
-
     std::println("---- Common.hpp ----");
     {
+#if SECCAMP_PLATFORM(MACOS)
+        std::println("macOS");
+#endif
     }
 
     std::println("---- Utility.hpp ----");
     {
+        std::println("IsEven(42) = {}", IsEven(42));
+        std::println("IsOdd(42) = {}", IsOdd(42));
+        Sleep(1000);
     }
 
     std::println("---- Point.hpp ----");

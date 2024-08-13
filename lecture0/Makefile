@@ -1,9 +1,9 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++2b
 TARGET = main
-SRCS = Main.cpp
+SRCS = Main.cpp MyLib/*.cpp
 OBJS = $(SRCS:.cpp=.o)
-DEPS = MyLib/Common.hpp
+DEPS = MyLib/*.hpp
 
 
 all: $(TARGET)
