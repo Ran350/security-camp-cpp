@@ -10,7 +10,7 @@
 #include "MyLib/TextFileReader.hpp"   // - 15:55
 #include "MyLib/TextFileWriter.hpp"   // - 15:40
 //  [15:55 - 16:10 break time]
-// #include "MyLib/Color.hpp" // - 16:30
+#include "MyLib/Color.hpp" // - 16:30
 // #include "MyLib/Image.hpp" // - 16:50
 // #include "MyLib/BMP.hpp" // - 17:10
 
@@ -31,7 +31,6 @@ int main()
     {
         std::println("IsEven(42) = {}", IsEven(42));
         std::println("IsOdd(42) = {}", IsOdd(42));
-        Sleep(1000);
     }
 
     std::println("---- Point.hpp ----");
@@ -46,11 +45,6 @@ int main()
 
     std::println("---- FileSystem.hpp ----");
     {
-        BinaryFileWriter writer{"Main.cpp"};
-        if (writer)
-        {
-            std::println("");
-        }
     }
 
     std::println("---- Timer.hpp ----");
@@ -74,10 +68,18 @@ int main()
 
     std::println("---- TextFileReader.hpp ----");
     {
-    }
 
+        TextFileReader reader{"README.md"};
+        std::string line;
+        reader.readLine(line);
+        std::println("line = {}", line);
+    }
+    
     std::println("---- Color.hpp ----");
     {
+        Color color = {255, 123, 123, 255};
+        std::println("color == color", color == color);
+        std::println("color = {}", color);
     }
 
     std::println("---- Image.hpp & BMP.hpp ----");
