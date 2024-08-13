@@ -1,9 +1,9 @@
-﻿#include "MyLib/Common.hpp"  // - 13:50
-#include "MyLib/Point.hpp"   // - 14:20
-#include "MyLib/Utility.hpp" // - 14:00
+﻿#include "MyLib/Common.hpp"     // - 13:50
+#include "MyLib/FileSystem.hpp" // - 14:30
+#include "MyLib/Point.hpp"      // - 14:20
+#include "MyLib/Timer.hpp"      // - 14:40
+#include "MyLib/Utility.hpp"    // - 14:00
 #include <print>
-// #include "MyLib/FileSystem.hpp" // - 14:30
-// #include "MyLib/Timer.hpp"// - 14:40
 //  [14:40 - 14:55 break time]
 // #include "MyLib/BinaryFileWriter.hpp" // - 15:10
 // #include "MyLib/BinaryFileReader.hpp" // - 15:25
@@ -50,6 +50,9 @@ int main()
 
     std::println("---- Timer.hpp ----");
     {
+        Timer timer;
+        Sleep(1000);
+        // timer.print();
     }
 
     std::println("---- BinaryFileWriter.hpp ----");
